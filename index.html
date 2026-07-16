@@ -3,60 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- This is the website header and navigation menu -->
     <header>
-        <img src="../images/logo.png" alt="logo" width="900">
+        <div class="header-container"> 
+            <div class="logo">
+         <img src="../images/logo.png" alt="logo" width="150">
+        </div>
+        
         <nav>
-            <ul> 
+
+            <ul> <!--Use of ul to create unordered list-->
            <li><a href="#">Home </a></li>
            <li><a href="#about">About </a></li>
             <li><a href="#skill">Skills </a></li>
            <li><a href="#project">Projects </a></li>
            <li><a href="#contact">Contact </a></li>
             </ul>
+           
+        </nav>
+
+        <div class="search-bar"> 
         <form>
              <input type="text" placeholder="Search">
              <button type="submit">Search</button>
-            </form>            
-        </nav>
-        <hr>
-    
+            </form>     
+            <hr>    
     </header>
 
     <main>
+         <!-- This is the About me section -->
         <section id="about">
+            <div class="about-container">
+                <div class="about-text"> 
         <h1>About me</h1>
         <p>
-            Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella. I am Yukta Karmacharya, an aspiring Cloud Engineer and UI/UX Designer passionate about creating intuitive digital experiences and learning modern cloud technologies.
-           <br>
+          I am Yukta Karmacharya, an aspiring Web Developer, UI/UX Designer, and Cloud Computing enthusiast passionate about building user-friendly websites and creating intuitive digital experiences. I enjoy transforming ideas into clean, responsive, and accessible designs while continuously expanding my knowledge of modern web technologies and cloud platforms. My goal is to develop innovative solutions that combine functionality, creativity, and a seamless user experience.<br>
            </p>
-            <img src="../images/yukta.jpg" alt="yukta" width="100">
-            <hr>
-        
+           </div>
+            <img src="../images/yukta.jpg" alt="yukta" width="200"> <!--use of img-->
+        </div>        
         </section>
-             <section id="skill">
-<h1> My Skills</h1>
-<dl>
-    <dt>Programming Languages</dt>
-    <dd>C, Java, python, c#</dd>
+          <hr>    
 
-    <dt>Frameworks</dt>
-    <dd>django, asp.dotnet, angular, blazor</dd>
 
-    <dt>Databases</dt>
-    <dd>MySQL, mongoDB, Postgres, Oracle</dd>
+<!-- This is the Skill section -->
+ <section id="skill">
+ <div class="skill-container">
+  <h1 class="skill-heading">My Skills</h1>
+  <div class="skill-grid">
+    <div class="skill-card">
+       <dl> <!--use of dl to create semantic description list-->
+      <dt>Programming Languages</dt>
+     <dd>C, Java, Python, C#</dd>
+     </div>
+ 
+     <div class="skill-card"> 
+     <dt>Frameworks</dt>
+     <dd>Django, Asp.dotnet, Angular, Blazor</dd>
+     </div>
 
+     <div class="skill-card">
+      <dt>Databases</dt>
+    <dd>MySQL, MongoDB, Postgres, Oracle</dd>
+    </div>
+
+    <div class="skill-card">
     <dt>Tools</dt>
     <dd>Visual Studio, Word, Exell, Powerpoint</dd>
+    </div>
 </dl>
-             </section>
-            <hr>
-
+</div>
+ </section>
+   <hr>    
+            
+<!-- This is the Project section -->
             <section id="project">
+                <div class="project-container">
                 <h1>My Projects</h1>
-                <article>
+                <article> <!-- Use of article tag to create two independent piece of content -->
                     <h2>Hangman Game</h2>
                     <p>As a project in our frst year, we were teasked to create a game "Hangman" using the C programming language. From the project I developed a strong base on C and its uses.</p>
                     <p> <a href="https://github.com/repos" target="_blank">Click here to visit the Project</a></p>
@@ -67,36 +95,45 @@
                     <p>We were tasked to prepare a library management system for our python project. From the project, I developed a strong base on python and its uses.</p>
                     <p> <a href="https://github.com/repos" target="_blank">Click here to visit the Project</a></p>
                 </article>
+                </div>
             </section>
-            <hr>
+              <hr>    
         
+ <!-- This is the Contact section -->           
 <section id="contact">
+    <div class="contact-container">
     <h1>Contact</h1>
    <form>
-    <label>Full Name</label><br>
+    <label>Full Name</label><br> <!-- use of label -->
     <input type="text"><br>
 
-    <label>Email</label><br>
+    <label>Email</label><br> <!-- use of label -->
     <input type="email"><br>
 
-    <label>Message</label><br>
-    <textarea></textarea><br>
+    <label>Message</label><br> <!-- use of label -->
+    <textarea></textarea><br> <!-- Use of textarea -->
     <button type="submit">Submit</button>
 </form>
-
+</div>
 </section>
+  <hr>    
     </main>
 
+    <!-- Footer -->
     <footer>
-        <hr>
+         <div class="footer-container">
+        
         <p> &copy; 2026 My portfolio. All rights reserved.</p>
 
-    </footer>
-    <div style="display: flex; gap: 20px;"></div>
     <img src="../images/gmail.png" alt="gmail" width="30">
     <img src="../images/gthub.png" alt="gthub" width="32">
     <img src="../images/lnkden.jpg" alt="lnkden" width="30">
     <img src="../images/whatsapp.jpg" alt="whatsapp" width="30">
+</div>
+  <hr>    
+    </footer>
+    
 
 </body>
+
 </html>
